@@ -124,20 +124,25 @@ var e=document.querySelector("#score5").value;
 var f=document.querySelector("#score6").value;
 
 
-var sumit= (+a)+(+b)+(+c)+100/6;
-var sumit2=+(+d)+(+e)+(+f)+100/6;
+var mm= (+a)+(+b)+(+c);
 
-var t=document.querySelector("p").textContent=sumit;
+var mm2=(+d)+(+e)+(+f);
+
+var sumit=Math.round(mm);
+var sumit2=Math.round(mm2);
+
+var t=document.querySelector("#team1").
+textContent=sumit;
 
 
-var t2=document.querySelector("b").textContent=sumit2;
+var t2=document.querySelector("#team2").textContent=sumit2;
 
 
 
 
 if (sumit>sumit2) {
 
-var t3=document.querySelector("#win").textContent="Team-1 wins";
+var t3=document.querySelector("#win").textContent="Team-1 wins ";
 
 }
 
